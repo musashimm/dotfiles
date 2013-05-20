@@ -1,0 +1,15 @@
+*sublime-project
+*sublime-workspace
+*roska*
+config/deploy.rb
+public/assets/*
+*.sqlite3
+*.swp
+*~
+*cache*
+*.pyc
+*.log
+*.gem
+doc
+.yardoc
+tags

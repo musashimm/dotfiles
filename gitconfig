@@ -1,0 +1,27 @@
+[user]
+  name = Wojciech Todryk
+  email = wojciech@todryk.pl
+
+[core]
+  excludesfile = ~/.gitignore_global
+  filemode = false
+
+[alias]
+  ci = commit -m
+  cia = commit --all -m
+  st = status
+  push = push origin master
+  aa = add --all
+  stuno = status -uno
+  br = branch
+  bra = branch -a -v
+  lg = log --all --decorate --pretty=format:"%Cgreen%cr\\ %C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]"
+  lgs = log --summary --stat
+  lnc = log --pretty=format:"%h\\ %s\\ [%cn]"
+  la = "!git config -l | grep alias | cut -c 7-"
+[color]
+  ui = true
+[push]
+  default = simple
+[http]
+  proxy = http://localhost:5865
