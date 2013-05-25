@@ -1,0 +1,21 @@
+after editing .Xdefaults it may be reloaded with:
+!xrdb -load ~/.Xdefaults
+
+xterm*VT100*geometry: 140x55+20+20
+xterm*faceName: monaco
+xterm*faceSize: 12
+! xterm*font: monaco
+! xterm*background: black
+! xterm*foreground: lightblue
+xterm*loginShell: true
+! xterm*scrollBar: true
+! xterm*rightScrollBar: true
+xterm*title: XTerm
+xterm*iconName: XTerm
+xterm*saveLines: 50000
+xterm*jumpScroll: true
+xterm*scrollTtyOutput: false
+xterm*scrollKey: true
+xterm*alwaysUseMods: true
+xterm*metaSendsEscape: true
+xterm*utf8Title: true

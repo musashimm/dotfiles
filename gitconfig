@@ -23,5 +23,3 @@
   ui = true
 [push]
   default = simple
-[http]
-  proxy = http://localhost:5865
