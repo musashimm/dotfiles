@@ -1,6 +1,5 @@
-ln -sf ~/.dotfiles/gitconfig ~/.gitconfig
-ln -sf ~/.dotfiles/gitignore_global ~/.gitignore_global
-ln -sf ~/.dotfiles/bashrc ~/.bashrc
-ln -sf ~/.dotfiles/xinitrc ~/.xinitrc
-ln -sf ~/.dotfiles/bash_profile ~/.bash_profile
-ln -sf ~/.dotfiles/bash_logout ~/.bash_logout
+for file in gitconfig gitignore_global bashrc xinitrc bash_profile bash_logout tmux.conf Xdefaults
+do
+  echo "Making symlink to: $file"
+  ln -sf ~/.dotfiles/$file ~/.$file
+done
