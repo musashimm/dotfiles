@@ -10,8 +10,8 @@
 # past this point for scp and rcp, and it's important to refrain from
 # outputting anything in those cases.
 if [[ $- != *i* ]] ; then
-	# Shell is non-interactive.  Be done now!
-	return
+  # Shell is non-interactive.  Be done now!
+  return
 fi
 
 
@@ -19,7 +19,23 @@ fi
 export EDITOR=/usr/bin/vi
 export PATH=$PATH:$HOME/bin
 alias g='gvim --remote-silent -geometry 160x60'
-alias vi='gvim --remote-silent -geometry 160x60'
+alias vi='g'
+
+alias t='tmux -2'
+
+alias be='bundle exec'
+alias bes='be rails s'
+alias ber='be rspec'
+
+alias gst='git status'
+alias gad='git add .'
+function gca {
+  git commit -m "$*"
+}
+alias glg='git lg'
+function gitprompt {
+  vcprompt --format "(%s:%b%m%a%u)"
+}
 
 WHITE="\[\033[00m\]"
 BLACK="\[\033[01;30m\]"
@@ -33,7 +49,4 @@ PURPLE="\[\033[0;35m\]"
 CYAN="\[\033[0;36m\]"
 LIGHT_GRAY="\[\033[0;37m\]"
 
-function gitprompt {
-	vcprompt --format "(%s:%b%m%a%u)"
-}
 export PS1="$PURPLE\u@\h$WHITE:$BLUE\w$YELLOW\$(gitprompt)$WHITE\$ "
