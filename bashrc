@@ -17,7 +17,7 @@ fi
 
 # Put your fun stuff here.
 export EDITOR=/usr/bin/vi
-export PATH=$PATH:$HOME/bin
+export PATH=$PATH:$HOME/bin:/usr/local/heroku/bin
 alias g='gvim --remote-silent -geometry 160x60'
 alias vi='g'
 
@@ -29,7 +29,8 @@ alias ber='be rspec'
 
 alias gst='git status'
 alias gad='git add .'
-function gca {
+alias gca='git_commit_all_with_no_quotas'
+function git_commit_all_with_no_quotas {
   git commit -m "$*"
 }
 alias glg='git lg'
