@@ -29,6 +29,7 @@ alias ber='be rspec'
 
 alias gst='git status'
 alias gad='git add .'
+alias gitp='git push'
 alias gca='git_commit_all_with_no_quotas'
 function git_commit_all_with_no_quotas {
   git commit -m "$*"
