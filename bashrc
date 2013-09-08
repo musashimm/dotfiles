@@ -17,22 +17,32 @@ fi
 
 # Put your fun stuff here.
 export EDITOR=/usr/bin/vi
-export PATH=$PATH:$HOME/bin:/usr/local/heroku/bin
 alias g='gvim --remote-silent -geometry 160x60'
 alias vi='g'
 
 alias t='tmux -2'
 
 alias be='bundle exec'
-alias bes='be rails s'
 alias ber='be rspec'
+alias beg='be guard'
+alias bec='be rails c'
 
 alias gst='git status'
-alias gad='git add .'
-alias gitp='git push'
+alias gid='git add'
+alias gad='git add .;git status'
+alias gitp='git push;git status'
 alias gca='git_commit_all_with_no_quotas'
+function start_rails {
+if [ -f ./script/server ]; then
+  bundle exec script/server
+else
+  be rails s
+fi
+}
+alias bes='start_rails'
 function git_commit_all_with_no_quotas {
   git commit -m "$*"
+  git status
 }
 alias glg='git lg'
 function gitprompt {

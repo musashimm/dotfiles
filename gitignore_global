@@ -2,7 +2,6 @@
 *sublime-workspace
 *roska*
 config/deploy.rb
-public/assets/*
 *.sqlite3
 *.swp
 *~
@@ -10,7 +9,6 @@ public/assets/*
 *.pyc
 *.log
 *.gem
-doc
 .yardoc
 tags
 pkg/*
