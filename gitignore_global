@@ -1,7 +1,6 @@
 *sublime-project
 *sublime-workspace
 *roska*
-config/deploy.rb
 *.sqlite3
 *.swp
 *~
