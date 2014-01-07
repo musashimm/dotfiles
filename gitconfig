@@ -19,6 +19,8 @@
   lgs = log --summary --stat
   lnc = log --pretty=format:"%h\\ %s\\ [%cn]"
   la = "!git config -l | grep alias | cut -c 7-"
+  rso = remote show origin
+  rson = remote show origin -n
 	ctags = !.git/hooks/ctags
 [color]
   ui = true

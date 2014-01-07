@@ -5,6 +5,10 @@
 # that can't tolerate any output.  So make sure this doesn't display
 # anything or bad things will happen !
 
+# rbenv
+# export PATH="$HOME/.rbenv/bin:$PATH"
+# eval "$(rbenv init -)"
+# source ~/.rbenv/completions/rbenv.bash
 
 # Test for an interactive shell.  There is no need to set anything
 # past this point for scp and rcp, and it's important to refrain from
@@ -61,4 +65,6 @@ PURPLE="\[\033[0;35m\]"
 CYAN="\[\033[0;36m\]"
 LIGHT_GRAY="\[\033[0;37m\]"
 
-export PS1="$PURPLE\u@\h$WHITE:$BLUE\w$YELLOW\$(gitprompt)$WHITE\$ "
+ruby_version='$(rbenv version | sed -e "s/ (set.*$//")'
+
+export PS1="$PURPLE\u@\h$WHITE:$BLUE\w$GREEN(${ruby_version})$YELLOW\$(gitprompt)$WHITE\$ "
