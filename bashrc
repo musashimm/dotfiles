@@ -40,7 +40,7 @@ function start_rails {
 if [ -f ./script/server ]; then
   bundle exec script/server
 else
-  be rails s
+  be rails s -b 127.0.0.1
 fi
 }
 alias bes='start_rails'
