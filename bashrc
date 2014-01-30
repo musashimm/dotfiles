@@ -27,6 +27,7 @@ alias vi='g'
 alias t='tmux -2'
 
 alias be='bundle exec'
+alias bi='bundle install'
 alias ber='be rspec'
 alias beg='be guard'
 alias bec='be rails c'
