@@ -34,6 +34,8 @@ alias bec='be rails c'
 
 alias gst='git status'
 alias gid='git add'
+alias grm='git rm'
+alias gdf='git diff'
 alias gad='git add .;git status'
 alias gitp='git push;git status'
 alias gca='git_commit_all_with_no_quotas'
