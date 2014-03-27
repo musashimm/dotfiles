@@ -1,2 +1,2 @@
-require 'hirb'
-Hirb.enable
+require "awesome_print"
+AwesomePrint.irb!
