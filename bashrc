@@ -28,9 +28,12 @@ alias t='tmux -2'
 
 alias be='bundle exec'
 alias bi='bundle install'
+alias buc='bundle check'
 alias ber='be rspec'
 alias beg='be guard'
 alias bec='be rails c'
+alias best='be rails s -e staging'
+alias bep='be rails s -e production'
 
 alias gst='git status'
 alias gid='git add'
@@ -48,7 +51,7 @@ fi
 }
 alias bes='start_rails'
 function git_commit_all_with_no_quotas {
-  git commit -m "$*"
+  git commit -a -m "$*"
   git status
 }
 alias glg='git lg'
