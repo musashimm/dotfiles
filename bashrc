@@ -26,6 +26,11 @@ alias vi='g'
 
 alias t='tmux -2'
 
+alias ys='yard server --reload'
+
+alias mms='be middleman server'
+alias mmb='be middleman build'
+
 alias be='bundle exec'
 alias bi='bundle install'
 alias buc='bundle check'
@@ -34,6 +39,7 @@ alias beg='be guard'
 alias bec='be rails c'
 alias best='be rails s -e staging'
 alias bep='be rails s -e production'
+alias berk='be rake'
 
 alias gst='git status'
 alias gid='git add'

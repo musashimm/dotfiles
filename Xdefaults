@@ -2,8 +2,9 @@ after editing .Xdefaults it may be reloaded with:
 !xrdb -load ~/.Xdefaults
 
 xterm*VT100*geometry: 140x55+20+20
-xterm*faceName: DejaVu Sans Mono
-xterm*faceSize: 11
+xterm*faceName: Monospace
+!xterm*faceName: DejaVu Sans Mono
+xterm*faceSize: 12
 ! xterm*background: black
 ! xterm*foreground: lightblue
 xterm*loginShell: true
