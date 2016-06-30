@@ -48,6 +48,8 @@ alias gdf='git diff'
 alias gad='git add .;git status'
 alias gitp='git push;git status'
 alias gca='git_commit_all_with_no_quotas'
+alias grm="git status |grep deleted|awk '{print \$3}'|xargs git rm"
+
 function start_rails {
 if [ -f ./script/server ]; then
   bundle exec script/server

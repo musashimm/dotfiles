@@ -9,5 +9,4 @@
 *.log
 *.gem
 .yardoc
-tags
 pkg/*

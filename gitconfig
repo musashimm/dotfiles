@@ -7,10 +7,12 @@
   filemode = false
 
 [alias]
+  pl = pull --rebase
   ci = commit -m
   cia = commit --all -m
   st = status
   push = push origin master
+  psall = push --all origin
   aa = add --all
   stuno = status -uno
   br = branch
@@ -21,10 +23,10 @@
   la = "!git config -l | grep alias | cut -c 7-"
   rso = remote show origin
   rson = remote show origin -n
-	ctags = !.git/hooks/ctags
+  ctags = !.git/hooks/ctags
 [color]
   ui = true
 [push]
   default = simple
 [init]
-	templatedir = ~/.git_template
+  templatedir = ~/.git_template
