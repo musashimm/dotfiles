@@ -96,55 +96,9 @@ function gitprompt {
   vcprompt --format "(%s:%b%m%a%u)"
 }
 alias buc='bundle check'
-# export http_proxy=http://localhost:5865
-# export https_proxy=http://localhost:5865
-# export EDITOR=/usr/bin/gvim
-# export NLS_LANG=American_America.UTF8
-# alias g='gvim --remote-silent -geometry 160x60'
-# alias vi='g'
-# alias mml='ssh acsgw'
-#
-# alias t='tmux -2'
-#
-# alias ys='yard server --reload'
-#
-# alias mms='be middleman server'
-# alias mmb='be middleman build'
-#
-# alias be='bundle exec'
-# alias bi='bundle install'
-# alias buc='bundle check'
-# alias ber='be rspec'
-# alias beg='be guard'
-# alias bec='be rails c'
-# alias best='be rails s -e staging'
-# alias bep='be rails s -e production'
-# alias berk='be rake'
-# alias bem='be middleman'
-#
-# alias gst='git status'
-# alias gid='git add'
-# alias grm='git rm'
-# alias gdf='git diff'
-# alias gad='git add .;git status'
-# alias gitp='git push;git status'
-# alias gca='git_commit_all_with_no_quotas'
-# function start_rails {
-# if [ -f ./script/server ]; then
-#   bundle exec script/server
-# else
-#   be rails s -b 127.0.0.1
-# fi
-# }
-# alias bes='start_rails'
-# function git_commit_all_with_no_quotas {
-#   git commit -a -m "$*"
-#   git status
-# }
-# alias glg='git lg'
-# function gitprompt {
-#   vcprompt --format "(%s:%b%m%a%u)"
-# }
-#
-# alias rsg='ssh jelcz'
-# alias rserver='ruby -run -ehttpd . -p3000'
+alias grm='git rm $(git ls-files --deleted)'
+
+alias mis='be middleman server'
+alias mib='be middleman build'
+
+alias ys='yard server --reload'
