@@ -102,3 +102,6 @@ alias mis='be middleman server'
 alias mib='be middleman build'
 
 alias ys='yard server --reload'
+
+alias ruby_httpd='ruby -run -ehttpd . -p3000'
+
