@@ -1,13 +1,16 @@
-PROMPT='%{$fg[green]%}%c%{$reset_color%} $(git_time_since_commit)$(check_git_prompt_info)$(ruby_version) '
+PROMPT='%{$fg[green]%}%c%{$reset_color%} $(ruby_version) $(git_time_since_commit)$(git_super_status)'
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[blue]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%} "
-
-# Text to display if the branch is dirty
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[red]%}*%{$reset_color%}" 
-
-# Text to display if the branch is clean
-ZSH_THEME_GIT_PROMPT_CLEAN="" 
+ZSH_THEME_GIT_PROMPT_SEPARATOR=""
+ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg_bold[blue]%}%{?%G%}"
+ZSH_THEME_GIT_PROMPT_CHANGED="%{$fg_bold[blue]%}%{+%G%}"
+ZSH_THEME_GIT_PROMPT_STAGED="%{$fg_bold[red]%}%{*%G%}"
+ZSH_THEME_GIT_PROMPT_CONFLICTS="%{$fg_bold[red]%}%{✖%G%}"
+ZSH_THEME_GIT_PROMPT_CHANGED="%{$fg_bold[blue]%}%{✚%G%}"
+ZSH_THEME_GIT_PROMPT_BEHIND="%{$fg_bold[black]%}%{↓%G%}"
+ZSH_THEME_GIT_PROMPT_AHEAD="%{$fg_bold[black]%}%{↑%G%}"
+ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg_bold[green]%}%{✔%G%}"
 
 # Colors vary depending on time lapsed.
 ZSH_THEME_GIT_TIME_SINCE_COMMIT_SHORT="%{$fg[green]%}"
@@ -16,7 +19,7 @@ ZSH_THEME_GIT_TIME_SINCE_COMMIT_LONG="%{$fg[red]%}"
 ZSH_THEME_GIT_TIME_SINCE_COMMIT_NEUTRAL="%{$fg[blue]%}"
 
 function ruby_version() {
-  echo "%{$fg[red]%}($(rbenv_prompt_info))%{$reset_color%}"
+  echo "%{$fg[magenta]%}($(rbenv_prompt_info))%{$reset_color%}"
 }
 
 # Git sometimes goes into a detached head state. git_prompt_info doesn't
@@ -75,9 +78,9 @@ function git_time_since_commit() {
             fi
 
             if [ "$HOURS" -gt 24 ]; then
-                echo "$COLOR$(rvm_gemset)${DAYS}d${SUB_HOURS}h${SUB_MINUTES}m%{$reset_color%}|"
+                echo "$COLOR$(rvm_gemset)${DAYS}d%{$reset_color%}|"
             elif [ "$MINUTES" -gt 60 ]; then
-                echo "$COLOR$(rvm_gemset)${HOURS}h${SUB_MINUTES}m%{$reset_color%}|"
+                echo "$COLOR$(rvm_gemset)${HOURS}h%{$reset_color%}|"
             else
                 echo "$COLOR$(rvm_gemset)${MINUTES}m%{$reset_color%}|"
             fi
