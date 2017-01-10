@@ -1,4 +1,5 @@
-PROMPT='%{$fg[green]%}%c%{$reset_color%} $(ruby_version) $(git_time_since_commit)$(git_super_status)'
+PROMPT='%{$fg[green]%}%3d%{$reset_color%} '
+RPROMPT='$(ruby_version) $(git_time_since_commit)$(git_super_status)'
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[blue]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%} "
@@ -13,13 +14,13 @@ ZSH_THEME_GIT_PROMPT_AHEAD="%{$fg_bold[black]%}%{↑%G%}"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg_bold[green]%}%{✔%G%}"
 
 # Colors vary depending on time lapsed.
-ZSH_THEME_GIT_TIME_SINCE_COMMIT_SHORT="%{$fg[green]%}"
-ZSH_THEME_GIT_TIME_SHORT_COMMIT_MEDIUM="%{$fg[yellow]%}"
-ZSH_THEME_GIT_TIME_SINCE_COMMIT_LONG="%{$fg[red]%}"
-ZSH_THEME_GIT_TIME_SINCE_COMMIT_NEUTRAL="%{$fg[blue]%}"
+ZSH_THEME_GIT_TIME_SINCE_COMMIT_SHORT="%{$fg_bold[green]%}"
+ZSH_THEME_GIT_TIME_SHORT_COMMIT_MEDIUM="%{$fg_bold[yellow]%}"
+ZSH_THEME_GIT_TIME_SINCE_COMMIT_LONG="%{$fg_bold[red]%}"
+ZSH_THEME_GIT_TIME_SINCE_COMMIT_NEUTRAL="%{$fg_bold[blue]%}"
 
 function ruby_version() {
-  echo "%{$fg[magenta]%}($(rbenv_prompt_info))%{$reset_color%}"
+  echo "%{$fg_bold[magenta]%}($(rbenv_prompt_info))%{$reset_color%}"
 }
 
 # Git sometimes goes into a detached head state. git_prompt_info doesn't
