@@ -1,4 +1,7 @@
-PROMPT='%{$fg[green]%}%3d%{$reset_color%} '
+function uptime_short() {
+  uptime|cut -d "," -f 1|cut -f 5 -d " "
+}
+PROMPT='%{$fg_bold[black]%}[$(uptime_short)]%{$reset_color%} %{$fg[green]%}%3d%{$reset_color%} '
 RPROMPT='$(ruby_version) $(git_time_since_commit)$(git_super_status)'
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[blue]%}"
