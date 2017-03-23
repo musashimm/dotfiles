@@ -1,5 +1,5 @@
 function uptime_short() {
-  uptime|cut -d "," -f 1|cut -f 5 -d " "
+  uptime|cut -d "," -f 1|cut -f 4-5 -d " "
 }
 PROMPT='%{$fg_bold[black]%}[$(uptime_short)]%{$reset_color%} %{$fg[green]%}%3d%{$reset_color%} '
 RPROMPT='$(ruby_version) $(git_time_since_commit)$(git_super_status)'
