@@ -4,9 +4,10 @@
 *.sqlite3
 *.swp
 *~
-*cache*
+*cache
 *.pyc
 *.log
 *.gem
 .yardoc
 pkg/*
+support/backups
