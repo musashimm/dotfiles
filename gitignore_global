@@ -11,3 +11,4 @@
 .yardoc
 pkg/*
 support/backups
+node_modules
