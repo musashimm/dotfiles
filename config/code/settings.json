@@ -1,0 +1,22 @@
+{
+    "git.ignoreLegacyWarning": true,
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#005f5f",
+        "statusBar.noFolderBackground": "#005f5f",
+        "statusBar.debuggingBackground": "#005f5f"
+    },
+    "workbench.colorTheme": "Material Color",
+    "ruby.lint": {
+        "rubocop": true
+    },
+    "ruby.intellisense": "rubyLocate",
+    "ruby.locate": {
+        "include": "**/*.rb",
+        "exclude": "{**/@(test|spec|tmp|.*),**/@(test|spec|tmp|.*)/**,**/*_spec.rb}"
+    },
+    "workbench.startupEditor": "newUntitledFile",
+    "search.location": "panel",
+    "files.autoSave": "off",
+    "editor.tabSize": 2,
+    "workbench.iconTheme": "material-icon-theme"
+}
