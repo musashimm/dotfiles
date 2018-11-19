@@ -1,9 +1,18 @@
 {
     "git.ignoreLegacyWarning": true,
     "workbench.colorCustomizations": {
-        "statusBar.background": "#005f5f",
+        "statusBar.background": "#f1ab28",
+        "statusBar.foreground": "#201f1f",
         "statusBar.noFolderBackground": "#005f5f",
-        "statusBar.debuggingBackground": "#005f5f"
+        "statusBar.debuggingBackground": "#005f5f",
+        "list.hoverBackground": "#a5a5a5",
+        "list.hoverForeground": "#2e2e2e",
+        "list.focusBackground": "#dddddd",
+        "list.focusForeground": "#2e2e2e",
+        "editor.lineHighlightBackground": "#333"
+        
+    },
+    "editor.tokenColorCustomizations": {
     },
     "workbench.colorTheme": "Material Color",
     "ruby.lint": {
@@ -18,5 +27,11 @@
     "search.location": "panel",
     "files.autoSave": "off",
     "editor.tabSize": 2,
-    "workbench.iconTheme": "material-icon-theme"
+    "eslint.packageManager": "yarn",
+    "npm.packageManager": "yarn",
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+    "editor.renderWhitespace": "boundary",
+    "workbench.iconTheme": "Material Color",
+    "window.titleBarStyle": "custom",
 }
