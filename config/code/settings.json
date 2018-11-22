@@ -1,8 +1,8 @@
 {
     "git.ignoreLegacyWarning": true,
     "workbench.colorCustomizations": {
-        "statusBar.background": "#f1ab28",
-        "statusBar.foreground": "#201f1f",
+        "statusBar.background": "#5d3c79",
+        "statusBar.foreground": "#fdfdfd",
         "statusBar.noFolderBackground": "#005f5f",
         "statusBar.debuggingBackground": "#005f5f",
         "list.hoverBackground": "#a5a5a5",
