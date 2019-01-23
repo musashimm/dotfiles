@@ -1,3 +1,5 @@
+DISABLE_AUTO_UPDATE=true
+
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH:/usr/pgsql-9.4/bin:$HOME/.yarn/bin
 
@@ -55,6 +57,7 @@ plugins=(
   rails
   rbenv
   zsh_reload
+  yarn
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -76,7 +79,5 @@ alias bchk='bundle check'
 alias mis='be middleman server'
 alias mib='be middleman build'
 
-alias ys='yard server --reload'
-
-alias ruby_httpd='ruby -run -ehttpd . -p3000'
+alias ruby-httpd='ruby -run -ehttpd . -p3000'
 alias rdoc='rdoc -o doc/rdoc -f hanna lib/**/*.rb *.md --main README.md'
