@@ -1,39 +1,73 @@
 {
-    "git.ignoreLegacyWarning": true,
-    "workbench.colorCustomizations": {
-        "statusBar.background": "#573777",
-        "statusBar.foreground": "#fff",
-        "statusBar.noFolderBackground": "#005f5f",
-        "statusBar.debuggingBackground": "#005f5f",
-        "list.hoverBackground": "#a5a5a5",
-        "list.hoverForeground": "#2e2e2e",
-        "list.focusBackground": "#6e6e6e",
-        "list.focusForeground": "#000000",
-        "editor.lineHighlightBackground": "#333"
-        
-    },
-    "editor.tokenColorCustomizations": {
-    },
-    "workbench.colorTheme": "Material Color",
-    "ruby.lint": {
-        "rubocop": true
-    },
-    "ruby.intellisense": "rubyLocate",
-    "ruby.locate": {
-        "include": "**/*.rb",
-        "exclude": "{**/@(test|spec|tmp|.*),**/@(test|spec|tmp|.*)/**,**/*_spec.rb}"
-    },
-    "workbench.startupEditor": "newUntitledFile",
-    "search.location": "panel",
-    "files.autoSave": "off",
-    "editor.tabSize": 2,
-    "eslint.packageManager": "yarn",
-    "npm.packageManager": "yarn",
-    "telemetry.enableTelemetry": false,
-    "telemetry.enableCrashReporter": false,
-    "editor.renderWhitespace": "boundary",
-    "workbench.iconTheme": "vscode-icons",
-    "window.titleBarStyle": "custom",
-    "editor.fontSize": 18,
-    "terminal.integrated.fontSize": 16,
+  "git.ignoreLegacyWarning": true,
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#49467a",
+    "statusBar.foreground": "#ffffff",
+    "statusBar.noFolderBackground": "#005f5f",
+    "statusBar.debuggingBackground": "#005f5f",
+    "list.hoverBackground": "#deb8f7",
+    "list.hoverForeground": "#2e2e2e",
+    "list.focusBackground": "#cacaca",
+    "list.focusForeground": "#2e2e2e",
+    "editor.lineHighlightBackground": "#333"
+  },
+  "editor.tokenColorCustomizations": {},
+  "ruby.lint": {
+    "rubocop": true
+  },
+  "ruby.intellisense": "rubyLocate",
+  "ruby.locate": {
+    "include": "**/*.rb",
+    "exclude": "{**/@(test|spec|tmp|.*),**/@(test|spec|tmp|.*)/**,**/*_spec.rb}"
+  },
+  "workbench.startupEditor": "newUntitledFile",
+  "search.location": "panel",
+  "files.autoSave": "off",
+  "editor.tabSize": 2,
+  "eslint.packageManager": "yarn",
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    {
+      "language": "vue",
+      "autoFix": false
+    }
+  ],
+  "npm.packageManager": "yarn",
+  "telemetry.enableTelemetry": false,
+  "telemetry.enableCrashReporter": false,
+  "editor.wordWrap": "bounded",
+  "editor.renderWhitespace": "boundary",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.cursorBlinking": "smooth",
+  "workbench.iconTheme": "vscode-icons",
+  "window.titleBarStyle": "custom",
+  "search.showLineNumbers": true,
+  "breadcrumbs.enabled": true,
+  "http.proxySupport": "on",
+  "git.enableSmartCommit": true,
+  "files.useExperimentalFileWatcher": true,
+  "files.exclude": {
+    "/.git": true,
+    "/.DS_Store": true,
+    "/node_modules": true,
+    "/node_modules/": true
+  },
+  "search.exclude": {
+    "/node_modules": true
+  },
+  "files.watcherExclude": {
+    "/node_modules/": true
+  },
+  "workbench.colorTheme": "Material Color",
+  "[markdown]": {
+    "editor.renderWhitespace": "all",
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.parameterHints.enabled": false,
+    "editor.quickSuggestions": false,
+    "editor.snippetSuggestions": "none",
+  },
+  "editor.wordWrapColumn": 120,
+  "editor.fontSize": 18
 }
