@@ -39,7 +39,7 @@
   "editor.wordWrap": "bounded",
   "editor.renderWhitespace": "boundary",
   "editor.formatOnPaste": true,
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "editor.cursorBlinking": "smooth",
   "workbench.iconTheme": "vscode-icons",
   "window.titleBarStyle": "custom",
