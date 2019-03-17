@@ -70,5 +70,6 @@
   },
   "editor.wordWrapColumn": 120,
   "editor.fontSize": 18,
-  "editor.minimap.enabled": false
+  "editor.minimap.enabled": false,
+  "vsicons.dontShowNewVersionMessage": true
 }
