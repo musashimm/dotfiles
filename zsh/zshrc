@@ -73,6 +73,7 @@ function git_commit_all_with_no_quotas {
 alias gca='git_commit_all_with_no_quotas'
 alias glg='git lg'
 alias grm='git rm $(git ls-files --deleted)'
+alias gdf='git diff --name-only'
 
 alias bchk='bundle check'
 

@@ -1,4 +1,10 @@
 {
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.smoothScrolling": true,
+  "window.title": "${dirty} ${activeEditorMedium}${separator}${rootName}",
+  "workbench.editor.enablePreviewFromQuickOpen": false,
   "git.ignoreLegacyWarning": true,
   "workbench.colorCustomizations": {
     "statusBar.background": "#49467a",
@@ -41,7 +47,6 @@
   "editor.formatOnPaste": true,
   "editor.formatOnSave": false,
   "editor.cursorBlinking": "smooth",
-  "workbench.iconTheme": "vscode-icons",
   "window.titleBarStyle": "custom",
   "search.showLineNumbers": true,
   "breadcrumbs.enabled": true,
@@ -69,7 +74,6 @@
     "editor.snippetSuggestions": "none",
   },
   "editor.wordWrapColumn": 120,
-  "editor.fontSize": 18,
-  "editor.minimap.enabled": false,
-  "vsicons.dontShowNewVersionMessage": true
+  "editor.fontSize": 19,
+  "editor.minimap.enabled": false
 }
