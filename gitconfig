@@ -34,3 +34,9 @@
   ff = only
 [fetch]
   prune = true
+[url "http://"]
+  insteadOf = git://
+[http]
+  proxy = http://localhost:6677
+[credential]
+  helper = cache --timeout=3600
