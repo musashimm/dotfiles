@@ -31,6 +31,6 @@
 [init]
   templatedir = ~/.git_template
 [merge]
-	ff = only
+  ff = only
 [fetch]
-	prune = true
+  prune = true
