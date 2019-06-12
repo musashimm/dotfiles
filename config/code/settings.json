@@ -74,7 +74,7 @@
     "editor.snippetSuggestions": "none",
   },
   "editor.wordWrapColumn": 120,
-  "editor.fontSize": 16,
+  "editor.fontSize": 18,
   "editor.minimap.enabled": false,
   "window.zoomLevel": 0
 }

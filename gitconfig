@@ -24,6 +24,7 @@
   rso = remote show origin
   rson = remote show origin -n
   ctags = !.git/hooks/ctags
+  start = "!git diff HEAD^ --name-only|xargs ls -la | awk '{print $7}'|sort"
 [color]
   ui = true
 [push]
