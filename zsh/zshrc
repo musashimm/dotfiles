@@ -84,3 +84,5 @@ alias ruby-httpd='ruby -run -ehttpd . -p3000'
 alias rdoc='rdoc -o doc/rdoc -f hanna lib/**/*.rb *.md --main README.md'
 
 alias yd='yarn dev'
+
+alias prcs='procodile start'

@@ -76,5 +76,6 @@
   "editor.wordWrapColumn": 120,
   "editor.fontSize": 18,
   "editor.minimap.enabled": false,
-  "window.zoomLevel": 0
+  "window.zoomLevel": 0,
+  "workbench.iconTheme": "vscode-icons"
 }
