@@ -27,7 +27,6 @@
     "exclude": "{**/@(test|spec|tmp|.*),**/@(test|spec|tmp|.*)/**,**/*_spec.rb}"
   },
   "workbench.startupEditor": "newUntitledFile",
-  "search.location": "panel",
   "files.autoSave": "off",
   "editor.tabSize": 2,
   "eslint.packageManager": "yarn",
@@ -65,7 +64,6 @@
   "files.watcherExclude": {
     "/node_modules/": true
   },
-  "workbench.colorTheme": "Material Color",
   "[markdown]": {
     "editor.renderWhitespace": "all",
     "editor.acceptSuggestionOnEnter": "off",
@@ -74,8 +72,12 @@
     "editor.snippetSuggestions": "none",
   },
   "editor.wordWrapColumn": 120,
-  "editor.fontSize": 18,
+  "editor.fontSize": 16,
   "editor.minimap.enabled": false,
   "window.zoomLevel": 0,
-  "workbench.iconTheme": "vscode-icons"
+  "workbench.iconTheme": "vscode-icons",
+  "vsicons.dontShowNewVersionMessage": true,
+  "editor.formatOnType": true,
+  "workbench.colorTheme": "Night Owl (No Italics)",
+  "javascript.updateImportsOnFileMove.enabled": "always"
 }
