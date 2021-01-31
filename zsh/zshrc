@@ -85,4 +85,6 @@ alias rdoc='rdoc -o doc/rdoc -f hanna lib/**/*.rb *.md --main README.md'
 
 alias yd='yarn dev'
 
-alias prcs='procodile start'
+alias prs='procodile start'
+alias prk='procodile kill'
+alias prst='procodile status'
