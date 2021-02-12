@@ -91,3 +91,4 @@ alias prst='procodile status'
 alias prr='procodile restart'
 
 unset SSH_ASKPASS
+export http_proxy=http://localhost:6677
