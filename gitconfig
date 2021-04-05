@@ -33,5 +33,7 @@
   templatedir = ~/.git_template
 [merge]
   ff = only
+[pull]
+  ff = only
 [fetch]
   prune = true
