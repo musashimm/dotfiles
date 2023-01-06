@@ -1,6 +1,17 @@
-## Personal dot files configuration
+# Personal dot files configuration
 
-    cd ~
-    git clone https://github.com/musashimm/dotfiles.git ~/.dotfiles
-    chmod 755 ~/.dotfiles/configure.sh && ~/.dotfiles/configure.sh
+## General
 
+```sh
+cd ~
+git clone https://github.com/musashimm/dotfiles.git ~/.dotfiles
+chmod 755 ~/.dotfiles/configure.sh && ~/.dotfiles/configure.sh
+```
+
+## Zsh
+
+```sh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+ln -s ~/.dotfiles/zsh/plugins/musashi ~/.oh-my-zsh/custom/plugins/musashi
+ln -s .dotfiles/zsh/.zshrc ~/.zshrc
+```
