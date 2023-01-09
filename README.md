@@ -17,3 +17,10 @@ rm -rf ~/.oh-my-zsh/custom/themes
 ln -sf ~/.dotfiles/zsh/themes ~/.oh-my-zsh/custom/themes
 ln -s .dotfiles/zsh/.zshrc ~/.zshrc
 ```
+
+### Zsh functions
+
+```sh
+musashi_uptime_short
+musashi_tmux_color[color]
+```

@@ -2,6 +2,19 @@ function musashi_uptime_short() {
   uptime|cut -d "," -f 1|cut -f 4-5 -d " "
 }
 
+function musashi_tmux_color() {
+  color=${1}
+  if [[ $color ]]; then
+    echo "Tmux color for: ${1}"
+    printf "\x1b[38;5;${1}mcolour${1}\x1b[0m\n"
+  else
+    echo "Tmux all colors:"
+    for i in {0..255}; do
+      printf "\x1b[38;5;${i}mcolour${i}\x1b[0m\n"
+    done
+  fi
+}
+
 function musashi_ruby_version() {
   rbenv_prompt_info
   # echo "%{$fg_bold[magenta]%}($(rbenv_prompt_info))%{$reset_color%}"
