@@ -1,6 +1,6 @@
 # Prompt customizations
 # PROMPT='%{$fg_bold[black]%}[$(musashi_uptime_short)]%{$reset_color%} %{$fg[green]%}%3d%{$reset_color%} '
-PROMPT='%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ )%{$fg[green]%}%3d%{$reset_color%} '
+PROMPT='%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ )%{$reset_color%}%{$fg[green]%}%3d%{$reset_color%} '
 RPROMPT='%{$fg_bold[magenta]%}$(musashi_ruby_version)%{$reset_color%} '
 RPROMPT+='$(musashi_git_time_since_commit)$(git_super_status)'
 
